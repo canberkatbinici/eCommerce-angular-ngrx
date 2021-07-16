@@ -1,0 +1,106 @@
+{
+  "languages": {
+    "english": "English",
+    "Turkish": "Turkish"
+  },
+  "main-page": "Home",
+  "menu-items": {"main-page":  "home",
+    "products": "products",
+    "contact-us": "contact-us",
+    "dropdown": {
+      "my-profile" : "My Profile",
+      "my-orders" : "My Orders",
+      "wish-list": "Wish List",
+      "notifications": "Notifications",
+      "log-out": "Log-out"
+    }
+  },
+  "buttons": {
+    "learn-more" : "More...",
+    "buy-now" : "Buy Now",
+    "add-to-cart" : "Add To Cart",
+    "sign-in-to-buy": "Login For Purchase",
+    "view-all": "Show All",
+    "next": "Next",
+    "reset": "Reset",
+    "save":  "Save"
+  },
+  "products": {
+    "products": "Products",
+    "price-range": "Price Range",
+    "outdoor": "Outdoor",
+    "indoor": "Indoor",
+    "other": "Other"
+  },
+  "single-product": {
+    "description": "Description",
+    "reviews": "Reviews",
+    "similar-products": "Similar Products",
+    "area-radius": "Area Radius",
+    "subscription" : "Subscription",
+    "address-information": "Address Label",
+    "saved-addresses": "Saved Addresses",
+    "card-number" : "Card Number",
+    "card-owner-name": "Name On Card",
+    "expiration-date": "Expiration Date",
+    "card-cvc": "Cvc Code",
+    "process-successful": "Purchase Process Successful",
+    "done": "Done",
+    "card-info": "Card Information"
+
+  },
+  "profile": {
+    "manage-cards": "Manage Cards",
+    "order": "Order",
+    "my-orders": "My Orders",
+    "shopping-cart": "Shopping Cart",
+    "account-settings": "Account Settings",
+    "personal-info": "Personal Information",
+    "my-addresses" : "My Addresses",
+    "payment": "Payment",
+    "my-saved-cards": "My Saved Cards",
+    "for-me":  "Special For Me",
+    "my-rewards": "My Rewards",
+    "my-reviews": "My Reviews",
+    "my-wish-list": "My Wishlist",
+    "log-out": "Log Out",
+    "personal-info-page" : {
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "email": "E-Mail",
+      "phone-number": "Phone Number",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female"
+    },
+    "shopping-cart-page": {
+      "cart-total": "Cart Total",
+      "subtotal":  "Subtotal",
+      "delivery":  "Delivery",
+      "discount": "Discount",
+      "total": "Total",
+      "proceed-to-checkout": "Proceed To Checkout"
+    },
+    "manage-addresses-page": {
+      "manage-addresses": "Manage Addresses",
+      "address-label": "Address Label",
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "country": "Country",
+      "city": "City",
+      "district": "District",
+      "neighborhood":  "Neighborhood",
+      "zipcode": "Zipcode",
+      "address": "Address",
+      "add-address": "Add Address"
+    },
+    "manage-cards-page":{
+      "card-number": "Card Number",
+      "card-cvc": "Card Cvc",
+      "card-owner-name": "Name On Card",
+      "expiration-date": "Expiration Date"
+    }
+
+  }
+}
+

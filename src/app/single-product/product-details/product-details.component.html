@@ -1,0 +1,60 @@
+
+<div class="product-description">
+  <h2 style="font-weight: 400;"></h2>
+  <div class="rating-container">
+    <span><bar-rating [(rate)]="similarProducts.rate" [max]="5"></bar-rating></span>
+    <span class="rating">100 Rating</span>
+    <span class="sold">500 Sold</span>
+  </div>
+  <h2 style="font-weight: 400;"> {{product?.price}} $ </h2>
+  <div>
+    <h4>NUTRITION INFORMATION</h4>
+    {{product?.description}}
+
+<!--    <h5>LOOK FOR</h5>-->
+<!--    infoinfoinfoinfoinfoinfo-->
+
+<!--    <h5>TO STORE</h5>-->
+<!--    infoinfoinfoinfoinfoinfo infoinfoinfoinfoinfoinfoinfoinfo-->
+
+<!--    <h5>TO PREPARE</h5>-->
+<!--    info infoinfoinfoinfoinfo infoinfoinfoinfo-->
+
+  </div>
+  <div>
+    <div>
+
+      <mat-form-field>
+        <mat-label>{{"single-product.area-radius"| translate}}</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let areaRanges of product?.areaRanges" [value]="areaRanges.value">
+            {{areaRanges.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+
+      <mat-form-field>
+        <mat-label>{{"single-product.subscription"| translate}}</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let dateRanges of product?.dateRanges" [value]="dateRanges.value">
+            {{dateRanges.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="button-group">
+    <a *ngIf="user; else elseBlock"  [routerLink]="['buy']" routerLinkActive="active"><button mat-button mat-raised-button color="primary" class="buy-now-button space text-uppercase">{{"buttons.buy-now" | translate}}
+    </button>
+    </a>
+      <ng-template #elseBlock><button (click)="loginService.openLoginDialog()" mat-button mat-raised-button color="primary" class="buy-now-button space text-uppercase">{{"buttons.sign-in-to-buy" | translate}}</button></ng-template>
+
+    <button (click)="this.onAddProductToCart()" mat-button mat-stroked-button color="primary" class="button text-uppercase">
+      {{"buttons.add-to-cart" | translate}}
+    </button>
+  </div>
+
+
+</div>

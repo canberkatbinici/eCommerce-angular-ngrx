@@ -1,0 +1,26 @@
+
+  <div class="img col-lg-3">
+
+    <img class="productImg" src="{{product.images}}" alt="Photo of a Shiba Inu" style="  width: 240px;
+  height: 200px;">
+  </div>
+  <div class="name col-lg-3">
+    <h3> {{product.title}}</h3>
+    <p>{{product.description}}</p>
+  </div>
+  <div class="price col-lg-2" style="font-size: 20px">
+    ${{product.price}}
+  </div>
+  <div class="quantity col-lg-2">
+    <mat-icon fontSet="material-icons-outlined" (click)="onDecrementCartItem()" class="close-icon">remove</mat-icon>
+    <input style="height: 20px; margin-right: 5px; text-align: center;" type="text" size="1" [value]="product.quantity" />
+    <mat-icon fontSet="material-icons-outlined" (click)="onIncrementCartItem()" class="close-icon">add</mat-icon>
+  </div>
+<!--  <div class="total col-lg-1 ">-->
+<!--    $4.90-->
+<!---->
+<!--  </div>-->
+  <div class="close col-lg-1">
+    <mat-icon fontSet="material-icons-outlined" (click)="this.onRemoveCartItem()" class="close-icon">close</mat-icon>
+  </div>
+

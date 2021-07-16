@@ -1,0 +1,129 @@
+  <div class="profile-container">
+    <div class="sidebar">
+        <div class="profile">
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/profile-pic-male_2fd3e8.svg">
+
+                    </td>
+                    <td style="padding-left: 15px;">
+                        <span>Hello,</span>
+                        <h3 style="margin: 0;text-transform: uppercase">{{this.currUser.firstName}}  {{ this.currUser.lastName}}</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="settings">
+            <div class="list">
+
+                <div class="left-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">next_week</mat-icon>
+                </div>
+                <div class="title contain">
+                    {{"profile.order" | translate}}
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">chevron_right</mat-icon>
+                </div>
+              <div class="child-list">
+                <ul>
+                  <a [routerLink]="['my-orders']" routerLinkActive="active">
+                    <li>{{"profile.my-orders" | translate}}</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="child-list">
+                <ul>
+                  <a [routerLink]="['shopping-cart']"  routerLinkActive="active">
+                    <li>{{"profile.shopping-cart" | translate}}</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="list">
+
+                <div class="left-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">person</mat-icon>
+                </div>
+                <div class="title contain">
+                  {{"profile.account-settings" | translate}}
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">chevron_right</mat-icon>
+                </div>
+                <div class="child-list">
+                    <ul>
+                        <a [routerLink]="['profile']" [state]="{data :{data :currUser}}" routerLinkActive="active">
+                            <li>{{"profile.personal-info" | translate}}</li>
+                        </a>
+                        <a [routerLink]="['address']" routerLinkActive="active">
+                            <li>{{"profile.my-addresses" | translate}}</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="list">
+
+                <div class="left-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">add_comment</mat-icon>
+                </div>
+                <div class="title contain">
+                  {{"profile.payment" | translate}}
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">chevron_right</mat-icon>
+                </div>
+                <div class="child-list">
+                    <ul>
+                        <a [routerLink]="['carddetails']" routerLinkActive="active">
+                            <li>{{"profile.my-saved-cards" | translate}}</li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="list">
+                <div class="left-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">mesaj</mat-icon>
+                </div>
+                <div class="title contain">
+                  {{"profile.for-me" | translate}}
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">chevron_right</mat-icon>
+                </div>
+                <div class="child-list">
+                    <ul>
+                        <a [routerLink]="['rewards']" routerLinkActive="active">
+                              <li>{{"profile.my-rewards" | translate}}</li>
+                        </a>
+                        <a [routerLink]="['reviews']" routerLinkActive="active">
+                            <li>{{"profile.my-reviews" | translate}}</li>
+                        </a>
+                        <a [routerLink]="['wishlist']" routerLinkActive="active">
+                            <li>{{"profile.my-wish-list" | translate}}</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="list">
+                <div class="left-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">power_settings_new</mat-icon>
+                </div>
+                <div class="title contain">
+                  <a (click)="this.accountService.logout()">{{"profile.log-out" | translate}}</a>
+
+                </div>
+                <div class="right-icon contain">
+                    <mat-icon fontSet="material-icons-outlined">chevron_right</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>

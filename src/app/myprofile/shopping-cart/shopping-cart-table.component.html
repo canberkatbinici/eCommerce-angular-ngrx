@@ -1,0 +1,45 @@
+<div class="container">
+  <h3>{{"profile.shopping-cart"| translate}}</h3>
+  <!-- <div class="box">
+      <mat-icon style="vertical-align: middle;">add</mat-icon> &nbsp; &nbsp;
+      <span style="font-size: 14px; color: #3f51b5;">Add A New Address</span>
+  </div> -->
+<div class="shopping-cart-conatiner">
+<!--<div class="row">-->
+    <app-cart-item class="row" *ngFor="let item of cart" [product]="item" ></app-cart-item>
+
+<!--</div>-->
+
+<div class="cart-total">
+  <h2>{{"profile.shopping-cart-page.cart-total"| translate}}</h2>
+  <hr>
+  <table style="width: 100%">
+    <tr>
+      <td>{{"profile.shopping-cart-page.subtotal"| translate}}</td>
+      <td>${{totalPrice}}</td>
+    </tr>
+    <tr>
+      <td>{{"profile.shopping-cart-page.delivery"| translate}}</td>
+      <td>$0.60</td>
+    </tr>
+    <tr>
+      <td>{{"profile.shopping-cart-page.discount"| translate}}</td>
+      <td>$0.60</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <hr>
+      </td>
+    </tr>
+    <tr>
+
+      <td>{{"profile.shopping-cart-page.total"| translate}}</td>
+      <td style="font-size: 30px"><b>${{totalPrice}}</b></td>
+    </tr>
+  </table>
+  <div class="checkout-button">
+    <button [routerLink]="['../purchase']" mat-stroked-button color="primary" class="button full-button">{{"profile.shopping-cart-page.proceed-to-checkout"| translate}}</button>
+  </div>
+</div>
+</div>
+</div>

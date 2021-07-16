@@ -1,0 +1,124 @@
+<div class="conatiner" *ngIf="product" style="width: 100% ; display: flex">
+    <div class="product-img-container" style="width: 50%">
+        <img class="productImg" mat-card-image style="; padding: 20px; max-width: 600px" [src]="product.images[0]"
+            alt="Photo of a Shiba Inu">
+
+    </div>
+<!--  <app-product-details></app-product-details>-->
+<!--  <router-outlet></router-outlet>-->
+  <div class="main" style="width: 50%">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div class="description-tabs">
+    <mat-tab-group>
+        <mat-tab label="{{'single-product.description' | translate}}">
+
+            <div class="description">
+<!--                <h4>NUTRITION INFORMATION</h4>-->
+<!--                1 serving = 5 g (1 fruit)-->
+<!--                <br>-->
+<!--                134% Recommended Daily Intake per serving)<br>-->
+<!--                Sodium-free (1 mg per serving)<br>-->
+<!--                Fat-free (0.01 g per serving)<br>-->
+                <h5>LOOK FOR</h5>
+                Small, firm, dark red, cherry-like fruit.
+
+                <h5>TO STORE</h5>
+                Keep uncovered at room temperature for a few days or refrigerate washed fruits in a ventilated container
+                for 1 to 2 weeks.
+
+                <h5>TO PREPARE</h5>
+                Fresh fruits may be eaten plain or pressed into juice, jams and preserves.
+            </div>
+        </mat-tab>
+<!--        <mat-tab label="{{'single-product.description' | translate}}">-->
+<!--            <h2 style="font-weight: 400;">Manufacturer</h2>-->
+<!--            <div class="description"> On her way she met a copy. The copy warned the Little Blind Text, that where it-->
+<!--                came from it would have been-->
+<!--                rewritten a thousand times and everything that was left from its origin would be the word "and" and the-->
+<!--                Little Blind Text should turn around and return to its own, safe country.-->
+<!--            </div>-->
+<!--        </mat-tab>-->
+        <mat-tab label="{{'single-product.reviews' | translate}}">
+            <h2 style="font-weight: 400;">23 Reviews</h2>
+            <div class="flex-box-transparent message-box" style="padding: 0; margin-top: 5px;"
+                *ngFor="let message of messages">
+                <div class="img-box">
+                    <img src="{{message.image}}" width="60px" height="60px" style="border-radius: 50%;" />
+                </div>
+                <div class="detail-box">
+                    <div>
+                        <span style="font-weight: 400; font-size: 14px;"><a>{{message.name}}</a></span>
+                    </div>
+                    <div>
+
+                        5 Star
+                    </div>
+                    <div class="message">
+                        <span>{{message.details}}</span>
+                    </div>
+                    <div class="time" style="margin-top: 5px;">
+                        <span style="color: gray;">{{message.time}}</span>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
+
+<div class="products-container">
+    <div class="title">
+      {{"single-product.similar-products"| translate}}
+        <button mat-button mat-raised-button color="primary" class="viewAllBtn text-uppercase">
+          {{"buttons.view-all"| translate}}
+        </button>
+    </div>
+    <div class="body">
+        <mat-card class="example-card" *ngFor="let item of similarProducts" >
+            <div class="fab">
+                <mat-icon fontSet="material-icons-outlined">favorite_border</mat-icon>
+            </div>
+            <!-- <img class="productImg" mat-card-image src="{{item.image}}" alt="Photo of a Shiba Inu"> -->
+            <owl-carousel [options]="carouselOptions" [items]="item.images"
+                [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                <div class="item" *ngFor="let image of item.images; let i = index">
+                    <div class="thumbnail-image">
+                        <img [src]="image" class="productImg" mat-card-image  (click)="productHome(item.id)"/>
+                    </div>
+                </div>
+            </owl-carousel>
+            <mat-card-content>
+                <h3 style="margin: 0; font-weight: normal;">{{item.text}}</h3>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: bold; font-size: 14px;">${{item.price}}</span>
+                    <mat-icon fontSet="material-icons-outlined">shopping_cart</mat-icon>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+<div class="mobile-view">
+    <div class="title">
+        {{"single-product.similar-products"| translate}}
+        <button mat-button mat-raised-button color="primary" class="viewAllBtn text-uppercase">
+          {{"buttons.view-all"| translate}}
+        </button>
+    </div>
+    <div class="mobile-card" *ngFor="let item of similarProducts" >
+        <div class="header">
+            <owl-carousel [options]="carouselOptions" [items]="item.images"
+                [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                <div class="item" *ngFor="let image of item.images; let i = index">
+                    <div class="thumbnail-image">
+                        <img [src]="image" class="productImg" mat-card-image />
+                    </div>
+                </div>
+            </owl-carousel>
+        </div>
+        <div class="footer">
+            {{item.text}}
+        </div>
+    </div>
+</div>

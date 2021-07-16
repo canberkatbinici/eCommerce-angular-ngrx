@@ -1,0 +1,90 @@
+<!--<div class="contact-box">-->
+<!--    <div class="first">+ 1235 2355 98</div>-->
+<!--    <div class="second">YOUREMAIL@EMAIL.COM</div>-->
+<!--    <div class="third">3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</div>-->
+<!--</div>-->
+<mat-progress-bar mode="indeterminate" *ngIf="loadingEnable"></mat-progress-bar>
+<div class="header-box" style="background-color: #656565">
+    <div class="container">
+        <div class="mobile-view">
+            <mat-icon fontSet="material-icons-outlined" (click)="toggelSidenav()">MENÜ</mat-icon>
+        </div>
+        <div class="logo">
+            <a [routerLink]="['/home']" style="width: 100px;">
+                <img src="../../../assets/dtlogo.png" height="50px">
+            </a>
+        </div>
+
+
+        <!-- <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Search">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </form> -->
+
+        <div class="menu" >
+            <ul class="list" style="color: white" >
+                <li class="contain text-uppercase" [routerLink]="['/home']" routerLinkActive="active"><span>{{ "menu-items.main-page" |translate}}</span></li>
+                <li class="contain text-uppercase" [routerLink]="['/products']" routerLinkActive="active"><span>{{ "menu-items.products" |translate}}</span></li>
+<!--                <li class="contain" [routerLink]="['/images']" routerLinkActive="active"><span>IMAGES</span></li>-->
+                <li class="contain text-uppercase" [routerLink]="['/contact-us']" routerLinkActive="active"><span>{{ "menu-items.contact-us" |translate}}</span>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+        <div class="menu">
+            <ul class="list">
+                <li class="contain" *ngIf="!user" (click)="loginService.openLoginDialog()">
+                    <span>GİRİŞ YAP</span>
+                </li>
+              <li class="contain" *ngIf="!user" [routerLink]="['/register']">
+                <span>KAYIT OL</span>
+              </li>
+                <li class="contain profile dropdown" *ngIf="user">
+                    <img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/profile-pic-male_2fd3e8.svg"
+                        width="25px">
+
+                    <div class="dropdown-content">
+                        <a [routerLink]="['/myprofile']"><div>{{ 'menu-items.dropdown.my-profile' | translate }}</div>
+                        </a>
+                        <a [routerLink]="['/my-orders']"><div>{{ 'menu-items.dropdown.my-orders' | translate }}</div></a>
+                        <a [routerLink]="['/wishlist']"><div>{{ 'menu-items.dropdown.wish-list' | translate }}</div></a>
+                        <a [routerLink]="['/notification']"><div>{{ 'menu-items.dropdown.notifications' | translate }}</div></a>
+                        <a (click)="accountService.logout()"><div>{{ 'menu-items.dropdown.log-out' | translate }}</div></a>
+                    </div>
+                </li>
+
+                <li class="contain" *ngIf="user" [routerLink]="['/myprofile/shopping-cart']">
+                    <mat-icon fontSet="material-icons-outlined" class="my-mat-icon" >add_shopping_cart</mat-icon>
+                </li>
+              <li class="contain profile dropdown">
+                <img src="https://lh3.googleusercontent.com/proxy/wuDYRxAh1PiIRn8tCv_5zIuFVlIBqruWZXLrBIdvaFCaOJJ1vY5CUvmGXqaTnvIHJ4Givr6LvIKl42Czg9Xc_W8SjZc"
+                     width="25px">
+                <div class="dropdown-content" >
+                  <a (click)="useLanguage('tr')"><span>{{"languages.Turkish"| translate}}</span></a>
+                  <a (click)="useLanguage('en')"><span>{{"languages.english"| translate}}</span></a>
+
+                </div>
+              </li>
+            </ul>
+        </div>
+        <div class="cart-icon mobile-view" *ngIf="!user">
+            <button mat-stroked-button color="primary" class="button" (click)="loginService.openLoginDialog()">GİRİŞ YAP</button>
+        </div>
+        <div class="cart-icon mobile-view" *ngIf="user">
+            <a [routerLink]="['/myprofile/notifications']">
+                <mat-icon fontSet="material-icons-outlined">notification_important</mat-icon>
+            </a>&nbsp; &nbsp;
+            <a [routerLink]="['/shopping-cart']" >
+                <mat-icon fontSet="material-icons-outlined" >add_shopping_cart</mat-icon>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+<!-- <app-sidenav class="sidenavEnable"></app-sidenav> -->

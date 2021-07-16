@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b10e2cf4-ed06-4c49-bf6c-07b9bdc05ec8" name="Default Changelist" comment="git push" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gil0i20RegMHC2GyqxUgMBRxWP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="ts.external.directory.path" value="C:\Users\canbe\WebstormProjects\fruits-eComm\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\login" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\myprofile\cart-purchase" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\store" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\myprofile\shopping-cart" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\core" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\assets\i18n" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\assets" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\single-product\product-details" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\myprofile\cart-purchase" />
+      <recent name="C:\Users\canbe\WebstormProjects\fruits-eComm\src\app\myprofile" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.server.js">
+    <configuration name="Tests" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.server.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b10e2cf4-ed06-4c49-bf6c-07b9bdc05ec8" name="Default Changelist" comment="" />
+      <created>1598605072113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598605072113</updated>
+      <workItem from="1598605073255" duration="1138000" />
+      <workItem from="1598855983079" duration="23613000" />
+      <workItem from="1598955433230" duration="107000" />
+      <workItem from="1599028423079" duration="20360000" />
+      <workItem from="1599115354680" duration="22808000" />
+      <workItem from="1599202455578" duration="6685000" />
+      <workItem from="1599209616616" duration="246000" />
+      <workItem from="1599209935529" duration="14203000" />
+      <workItem from="1599461290991" duration="2299000" />
+      <workItem from="1599569607684" duration="5905000" />
+      <workItem from="1599637295087" duration="3205000" />
+      <workItem from="1599719828575" duration="19001000" />
+      <workItem from="1599832979534" duration="3356000" />
+      <workItem from="1600066710908" duration="846000" />
+      <workItem from="1600082835632" duration="8045000" />
+      <workItem from="1600153032983" duration="6569000" />
+      <workItem from="1600163895005" duration="35000" />
+      <workItem from="1600240251721" duration="6900000" />
+      <workItem from="1600255747429" duration="10149000" />
+      <workItem from="1600326783517" duration="16574000" />
+      <workItem from="1600369367173" duration="5757000" />
+      <workItem from="1600412638449" duration="10754000" />
+      <workItem from="1600508378891" duration="2263000" />
+      <workItem from="1600671528766" duration="18673000" />
+      <workItem from="1600941018141" duration="20000" />
+      <workItem from="1601288402595" duration="13104000" />
+      <workItem from="1601971977201" duration="617000" />
+      <workItem from="1601981526349" duration="13791000" />
+      <workItem from="1602149356454" duration="5378000" />
+      <workItem from="1602230422645" duration="12324000" />
+      <workItem from="1602663271354" duration="17790000" />
+      <workItem from="1602695820240" duration="1012000" />
+      <workItem from="1602745142703" duration="13194000" />
+      <workItem from="1602846477986" duration="2791000" />
+      <workItem from="1604325462499" duration="17782000" />
+      <workItem from="1604437525642" duration="36000" />
+      <workItem from="1604733078321" duration="1295000" />
+      <workItem from="1610451973890" duration="1316000" />
+      <workItem from="1613373554909" duration="1557000" />
+      <workItem from="1620639019879" duration="2331000" />
+      <workItem from="1620674912453" duration="8000" />
+      <workItem from="1621281170508" duration="192000" />
+      <workItem from="1621669117299" duration="30000" />
+      <workItem from="1626434220108" duration="1757000" />
+    </task>
+    <task id="LOCAL-00001" summary="creation">
+      <created>1598859392665</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598859392665</updated>
+    </task>
+    <task id="LOCAL-00002" summary="creation">
+      <created>1598859445998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598859445998</updated>
+    </task>
+    <task id="LOCAL-00003" summary="buy system improve">
+      <created>1598955463845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598955463845</updated>
+    </task>
+    <task id="LOCAL-00004" summary="çok şey değişti">
+      <created>1599057188390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599057188390</updated>
+    </task>
+    <task id="LOCAL-00005" summary="accaount servis eklendi server ile haberleşme sağlandı">
+      <created>1599204896148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599204896148</updated>
+    </task>
+    <task id="LOCAL-00006" summary="login servisi çalışır durumda">
+      <created>1599221779691</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599221779691</updated>
+    </task>
+    <task id="LOCAL-00007" summary="username canberk password 1234567">
+      <created>1599222263696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599222263696</updated>
+    </task>
+    <task id="LOCAL-00008" summary="header düzenlemeleri">
+      <created>1599463471252</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599463471252</updated>
+    </task>
+    <task id="LOCAL-00009" summary="cart ve ngrx store yapısı eklendi">
+      <created>1599750362901</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599750362901</updated>
+    </task>
+    <task id="LOCAL-00010" summary="cart quantity kontrolü ve remove product eklendi">
+      <created>1599835106840</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599835106840</updated>
+    </task>
+    <task id="LOCAL-00011" summary="user datası store içinde tutulmaya çalışılıyor">
+      <created>1600257826881</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600257826881</updated>
+    </task>
+    <task id="LOCAL-00012" summary="user datası store içinde tutulmaya çalışılıyor">
+      <created>1601981947327</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601981947327</updated>
+    </task>
+    <task id="LOCAL-00013" summary="cart server haberleşmesi sorunu düzeltildi">
+      <created>1601986031898</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601986031898</updated>
+    </task>
+    <task id="LOCAL-00014" summary="product details dataları bağlandı &#10;myprofile sayfaları kendi modulüne bölündü">
+      <created>1601995676346</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601995676347</updated>
+    </task>
+    <task id="LOCAL-00015" summary="cartPurchase">
+      <created>1602685681730</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602685681730</updated>
+    </task>
+    <task id="LOCAL-00016" summary="git push">
+      <created>1626434436960</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1626434436960</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="creation" />
+    <MESSAGE value="buy system improve" />
+    <MESSAGE value="çok şey değişti" />
+    <MESSAGE value="accaount servis eklendi server ile haberleşme sağlandı" />
+    <MESSAGE value="login servisi çalışır durumda" />
+    <MESSAGE value="username canberk password 1234567" />
+    <MESSAGE value="header düzenlemeleri" />
+    <MESSAGE value="cart ve ngrx store yapısı eklendi" />
+    <MESSAGE value="cart quantity kontrolü ve remove product eklendi" />
+    <MESSAGE value="user datası store içinde tutulmaya çalışılıyor" />
+    <MESSAGE value="cart server haberleşmesi sorunu düzeltildi" />
+    <MESSAGE value="product details dataları bağlandı &#10;myprofile sayfaları kendi modulüne bölündü" />
+    <MESSAGE value="cartPurchase" />
+    <MESSAGE value="git push" />
+    <option name="LAST_COMMIT_MESSAGE" value="git push" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="526" y="89" key="CommitChangelistDialog2" timestamp="1626435315910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="526" y="89" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1626435315910" />
+    <state width="1899" height="250" key="GridCell.Tab.0.bottom" timestamp="1620658157818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620658157818" />
+    <state width="1899" height="250" key="GridCell.Tab.0.center" timestamp="1620658157818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="250" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620658157818" />
+    <state width="1899" height="250" key="GridCell.Tab.0.left" timestamp="1620658157818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="250" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620658157818" />
+    <state width="1899" height="250" key="GridCell.Tab.0.right" timestamp="1620658157818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="250" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620658157818" />
+    <state x="790" y="389" key="VCS.EditChangelistDialog" timestamp="1626435326725">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="389" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626435326725" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1626435623844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1626435623844" />
+    <state x="698" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1626435437644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="698" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626435437644" />
+  </component>
+</project>

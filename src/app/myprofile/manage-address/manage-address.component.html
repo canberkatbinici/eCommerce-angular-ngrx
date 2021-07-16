@@ -1,0 +1,90 @@
+<div class="container">
+  <h3>{{"profile.manage-addresses-page.manage-addresses"| translate}}</h3>
+  <mat-tab-group>
+
+    <mat-tab *ngFor="let address of currUser.address" [label]="address?.name">
+      <div class="mat-tab-label"></div>
+      <div class="address-form">
+        <form [formGroup]="addressForm">
+          <div class="form-box">
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.address-label"| translate}}</mat-label>
+
+              <input matInput formControlName="name" placeholder="Adres Başlığı" [value]="address.name">
+            </mat-form-field>
+          </div>
+          <div class="form-box">
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.first-name"| translate}}</mat-label>
+
+              <input matInput formControlName="fistName" placeholder="Enter your first name" [value]="address.firs  tname">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.last-name"| translate}}</mat-label>
+              <input matInput formControlName="surName" placeholder="Enter your last name" [value]="address.surname">
+            </mat-form-field>
+          </div>
+          <div class="form-box">
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.country"| translate}}</mat-label>
+              <mat-select matInput formControlName="country" placeholder="Ülke Seçiniz">
+                <mat-option>
+
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.city"| translate}}</mat-label>
+              <mat-select matInput formControlName="city" placeholder="Şehir Seçiniz">
+                <mat-option>
+
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-box">
+
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.district"| translate}}</mat-label>
+              <mat-select matInput formControlName="district" placeholder="İlçe Seçiniz">
+                <mat-option>
+
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.neighborhood"| translate}}</mat-label>
+              <mat-select matInput formControlName="neighborhood" placeholder="Mahalle Seçiniz">
+                <mat-option>
+
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+              <mat-label>{{"profile.manage-addresses-page.zipcode"| translate}}</mat-label>
+              <input matInput formControlName="zipCode" placeholder="Lütfen Posta Kodunu Giriniz"
+                     [value]="address.zipCode">
+            </mat-form-field>
+          </div>
+          <mat-form-field appearance="outline" style="width: 100%">
+            <mat-label>Address</mat-label>
+            <textarea matInput formControlName="addressLine" placeholder="Enter full address"
+                      [value]="address.addressLine"></textarea>
+          </mat-form-field>
+          <div class="form-box">
+            <button mat-button mat-raised-button color="primary" class="buy-now-button">{{"buttons.save"| translate}}
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </mat-tab>
+    <mat-tab disabled>
+      <ng-template mat-tab-label>
+        <button mat-icon-button>
+          <mat-icon (click)="createAddressForm()" >{{"profile.manage-addresses-page.add-address"| translate}}</mat-icon>
+        </button>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</div>

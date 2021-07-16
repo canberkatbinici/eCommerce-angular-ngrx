@@ -1,0 +1,106 @@
+{
+  "languages": {
+    "english": "İngilizce",
+    "Turkish": "Türkçe"
+  },
+  "main-page": "Anasayfa",
+  "menu-items": {"main-page":  "anasayfa",
+                "products": "ürünler",
+                "contact-us": "bize ulaşın",
+                "dropdown": {
+                  "my-profile" : "Profilim",
+                  "my-orders" : "Siparişlerim",
+                  "wish-list": "İstek Listesi",
+                  "notifications": "Bildirimler",
+                  "log-out": "Çıkış"
+                }
+  },
+  "buttons": {
+    "learn-more" : "Daha Fazla...",
+    "buy-now": "Satın Al",
+    "add-to-cart": "Sepete Ekle",
+    "sign-in-to-buy": "Satın Almak İçin Giriş Yapın",
+    "view-all": "Tümünü Göster",
+    "next": "Sonraki",
+    "reset": "Başa Dön",
+    "save":  "Kaydet"
+  },
+  "products": {
+    "products": "Ürünler",
+    "price-range": "Fiyat Aralığı",
+    "outdoor": "Dış Mekan",
+    "indoor": "İç Mekan",
+    "other": "Diğer"
+  },
+  "single-product": {
+    "description": "Detaylar",
+    "reviews": "Değerlendirmeler",
+    "similar-products": "Benzer ürünler",
+    "area-radius": "Alan Yarıçapı",
+    "subscription" : "Abonelik",
+    "address-information": "Adres Bilgisi",
+    "saved-addresses": "Kayıtlı Adresler",
+    "card-number" : "Kart Numarası",
+    "card-owner-name": "Kart Üzerindeki İsim",
+    "expiration-date": "Son Kullanma Tarihi",
+    "card-cvc": "Güvenlik Kodu",
+    "process-successful": "Satın Alma İşlemi Başarılı.",
+    "done": "Tamamlandı",
+    "card-info": "Kart Bilgileri"
+
+  },
+  "profile": {
+    "manage-cards": "Kartları Yönet",
+    "order": "Sipariş",
+    "my-orders": "Siparişlerim",
+    "shopping-cart": "Alışveriş Sepeti",
+    "account-settings": "Hesap Ayarları",
+    "personal-info": "Kişisel Bilgiler",
+    "my-addresses" : "Adreslerim",
+    "payment": "Ödeme",
+    "my-saved-cards": "Kayıtlı Kartlarım",
+    "for-me":  "Bana Özel",
+    "my-rewards": "Kazançlarım",
+    "my-reviews": "Yorumlar",
+    "my-wish-list": "İstek Listesi",
+    "log-out": "Çıkış",
+    "personal-info-page" : {
+      "first-name": "İsim",
+      "last-name": "Soy İsim",
+      "email": "E-Mail",
+      "phone-number": "Telefon Numarası",
+      "gender": "Cinsiyet",
+      "male": "Erkek",
+      "female": "Kadın"
+    },
+    "shopping-cart-page": {
+      "cart-total": "Sepet Toplamı",
+      "subtotal":  "Ara Toplam",
+      "delivery":  "Gönderim",
+      "discount": "İndirim",
+      "total": "Toplam",
+      "proceed-to-checkout": "Ödeme Adımına Geç"
+    },
+    "manage-addresses-page": {
+      "manage-addresses": "Adresleri Yönet",
+      "address-label": "Adres Başlığı",
+      "first-name": "İsim",
+      "last-name": "Soyisim",
+      "country": "Ülke",
+      "city": "Şehir",
+      "district": "İlçe",
+      "neighborhood":  "Mahalle",
+      "zipcode": "Posta Kodu",
+      "address": "Adres",
+      "add-address": "Adres Ekle"
+    },
+    "manage-cards-page":{
+      "card-number": "Kart Numarası",
+      "card-cvc": "Güvenlik Kodu",
+      "card-owner-name": "Kart Üzerindeki İsim",
+      "expiration-date": "Son Kullanma Tarihi"
+    }
+
+  }
+}
+

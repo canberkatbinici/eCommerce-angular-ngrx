@@ -1,0 +1,185 @@
+<div class="container">
+    <div class="title">
+<div>{{ 'main-page' | translate }}</div>
+      <!--        <button mat-button mat-raised-button color="primary" class="viewAllBtn">-->
+<!--            View All-->
+<!--        </button>-->
+    </div>
+
+  <app-slider></app-slider>
+
+  <div class="body">
+        <ng-container *ngIf="!images">
+            <mat-card class="example-card"  *ngFor="let item of default">
+                <skltn-root class="example-card" duration="1000" [rectRadius]="10" flareWidth="50%" bgFill="#d8d5d1"
+                    flareFill="rgba(255,255,255, 0.5)">
+                    <!-- Card with Avatar -->
+                    <div class="skltn-card">
+                        <div skltn-bone class="skltn-card__avatar" type="circle"></div>
+                        <div class="skltn-card__body">
+                            <div skltn-bone class="skltn-card__title"></div>
+                            <div skltn-bone class="skltn-card__line"></div>
+                            <div skltn-bone class="skltn-card__line"></div>
+                        </div>
+                    </div>
+                </skltn-root>
+            </mat-card>
+        </ng-container>
+
+    <section class="tm-section-3 tm-section-mb" id="tm-section-3">
+      <div class="row">
+        <div class="col-md-6 tm-mb-sm-4 tm-2col-l">
+          <div class="image">
+            <img src="../../assets/tm-img-1.jpg" class="img-fluid" />
+          </div>
+          <div class="tm-box-3">
+            <h2>Lorem ipsum dolor</h2>
+            <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor
+              velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat
+              lacus placerat malesuada.</p>
+            <div class="text-center">
+              <a href="#tm-section-5" class="btn btn-big"><div>{{"buttons.learn-more" | translate}}</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 tm-2col-r">
+          <div class="image">
+            <img src="../../assets/tm-img-2.jpg" class="img-fluid" />
+          </div>
+          <div class="tm-box-3">
+            <header>
+              <h2>Vestibulum sit amet</h2>
+            </header>
+            <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor
+              velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat
+              lacus placerat malesuada.</p>
+            <div class="text-center">
+              <a href="#tm-section-5" class="btn btn-big">{{"buttons.learn-more" | translate}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="tm-section-2 tm-section-mb" id="tm-section-2">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 pr-md-5">
+          <header class="text-center">
+            <i class="fa fa-4x fa-power-off pl-5 pb-5 pr-5 pt-2"></i>
+          </header>
+
+          <h2>Lorem ipsum dolor</h2>
+          <p>Central Template is provided by <a href="https://www.facebook.com/tooplate" target="_blank">Tooplate</a>. Vestibulum sit amet tortor velit.
+            Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat
+            malesuada. </p>
+
+          <a href="#tm-section-3" class="btn tm-btn-pad-2 float-right">{{"buttons.learn-more" | translate}}</a>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-lg-0 mb-md-5 mb-5 pr-md-5">
+          <header class="text-center">
+            <i class="fa fa-4x fa-bolt pl-5 pb-5 pr-5 pt-2"></i>
+          </header>
+          <h2>Lorem ipsum dolor</h2>
+          <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit.
+            Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat
+            malesuada.
+          </p>
+
+          <a href="#tm-section-4" class="btn tm-btn-pad-2 float-right">{{"buttons.learn-more" | translate}}</a>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-12">
+          <h2>Nulla maximus hendrerit</h2>
+          <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit.</p>
+          <p>Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada, iaculis est.</p>
+          <p>+ Curabitur a massa malesuada, ullamcorper nisi tempus.</p>
+          <p>+ Maecenas ultricies magna sed suscipit pulvinar.</p>
+          <p>+ Nulla malesuada elit nec nisi aliquet pretium.</p>
+        </div>
+      </div>
+    </section>
+
+
+<!--    <mat-card class="example-card" *ngFor="let item of images; let i=index" (click)="productHome(item.id)">-->
+<!--    <div *ngIf="i<4" >-->
+<!--     <div class="fab">-->
+<!--        <mat-icon fontSet="material-icons-outlined">favorite_border</mat-icon>-->
+<!--      </div>-->
+<!--      <owl-carousel [options]="carouselOptions" [items]="item.images"-->
+<!--                    [carouselClasses]="['owl-theme', 'row', 'sliding']" >-->
+<!--        <div class="item" *ngFor="let image of item.image; let i = index">-->
+<!--          <div class="thumbnail-image">-->
+<!--            <img [src]="image" class="productImg" mat-card-image />-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </owl-carousel>-->
+<!--      <mat-card-content>-->
+<!--        <h3 style="margin: 0; font-weight: normal;">{{item.text}}</h3>-->
+<!--        <div style="display: flex; justify-content: space-between; align-items: center;">-->
+<!--          <span style="font-weight: bold; font-size: 14px;">$120.00</span>-->
+<!--          <mat-icon fontSet="material-icons-outlined">shopping_cart</mat-icon>-->
+<!--        </div>-->
+<!--      </mat-card-content>-->
+<!--    </div>-->
+<!--    </mat-card>-->
+
+
+
+
+  </div>
+</div>
+<!--<div class="mobile-view">-->
+<!--    <div class="title">-->
+<!--        New Products Arrival-->
+<!--        <button mat-button mat-raised-button color="primary" class="viewAllBtn">-->
+<!--            View All-->
+<!--        </button>-->
+<!--    </div>-->
+<!--    <div class="mobile-card" *ngFor="let item of images" (click)="productHome(item.id)">-->
+<!--        <div class="header">-->
+<!--            <img width="150px" height="150px" src="{{item.images}}" alt="Photo of a Shiba Inu">-->
+<!--        </div>-->
+<!--        <div class="footer">-->
+<!--            {{item.label}}-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!-- <div class="search-box">
+    <div class="icon">
+        <mat-icon class="leftIcon">star</mat-icon>
+    </div>
+    <div class="search-text">
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+    </div>
+    <div class="close">
+        <mat-icon style="padding:7px;">close</mat-icon>
+    </div>
+</div> -->
+<!--
+<div class="search-box">
+    <div class="search-text">
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+        <span>Skill tests are no longer available on Upwork. Learn more.</span>
+
+    </div>
+    <div class="close">
+        <mat-icon style="padding:7px;">close</mat-icon>
+    </div>
+</div> -->

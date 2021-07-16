@@ -1,0 +1,103 @@
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper style="width: 100%;height: 100%">
+  <mat-step label="{{'single-product.address-information'| translate}}">
+    <form [formGroup]="firstFormGroup">
+
+<!--      <mat-form-field>-->
+        <mat-label >{{"single-product.saved-addresses"| translate}}</mat-label>
+<!--        <div *ngIf="currUser.address != null" >-->
+        <mat-radio-group>
+          <mat-card  *ngFor="let addresses of currUser.address">
+
+            <mat-radio-button   [value]="addresses.id" >{{addresses.name}}</mat-radio-button>
+          </mat-card>
+        </mat-radio-group>
+<!--        </div>-->
+<!--        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>-->
+<!--      </mat-form-field>-->
+      <div>
+        <button mat-button matStepperNext>{{"buttons.next"| translate}}</button>
+
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" label="{{'single-product.card-info'| translate}}">
+<!--    <form [formGroup]="paymentInfo" >-->
+<!--      <div class="form-box">-->
+<!--        <mat-form-field appearance="outline">-->
+<!--          <mat-label>first name</mat-label>-->
+<!--          <input matInput formControlName="Kart Numarası" placeholder="Placeholder" [value]="currUser.firstName" >-->
+<!--        </mat-form-field>-->
+<!--        <mat-form-field appearance="outline" class="lastName">-->
+<!--          <mat-label>last name</mat-label>-->
+<!--          <input matInput formControlName="lastName" placeholder="Placeholder" [value]="currUser.lastName">-->
+<!--        </mat-form-field>-->
+<!--      </div>-->
+
+
+<!--      <div class="form-box">-->
+<!--        <mat-form-field appearance="outline">-->
+<!--          <mat-label>Email</mat-label>-->
+<!--          <input matInput formControlName="email" placeholder="Placeholder" [value]="currUser.email">-->
+<!--        </mat-form-field>-->
+<!--        <mat-form-field appearance="outline">-->
+<!--          <mat-label>Number</mat-label>-->
+<!--          <input matInput formControlName="mobile" placeholder="Placeholder" [value]="currUser.number">-->
+<!--        </mat-form-field>-->
+<!--      </div>-->
+<!--      <p>Your Gender:</p>-->
+<!--      <div class="form-box">-->
+
+<!--        <mat-radio-group formControlName="gender"  aria-label="Select an option" color="primary"  >-->
+<!--          <mat-radio-button value="male">Male</mat-radio-button> &nbsp; &nbsp;-->
+<!--          <mat-radio-button value="female">Female</mat-radio-button>-->
+<!--        </mat-radio-group>-->
+<!--      </div>-->
+<!--      <div class="form-box" style="margin-top:20px;">-->
+<!--        <button mat-button mat-raised-button color="primary" class="buy-now-button">SAVE-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </form>-->
+<!--    <div align="center">-->
+<!--      <ng-payment-card style="display: inline"></ng-payment-card>-->
+
+<!--    </div>-->
+    <mat-card >
+    <form [formGroup]="demoForm"  novalidate style="display: grid">
+      <div class="form-box" style="display: grid">
+        <mat-form-field appearance="outline">
+          <mat-label>{{"single-product.card-number"| translate}}</mat-label>
+          <input matInput id="cc-number" formControlName="creditCard" placeholder="____ ____ ____ ____" maxlength="16" type="tel" autocomplete="cc-number" ccNumber>
+        </mat-form-field>
+      </div>
+      <div class="form-box" style="display: grid">
+        <mat-form-field appearance="outline">
+          <mat-label>{{"single-product.card-owner-name"| translate}}</mat-label>
+          <input matInput id="cc-name" formControlName="cartName" placeholder="Kart Üzerindeki İsim" maxlength="30" type="text" >
+        </mat-form-field>
+      </div>
+      <div class="form-box">
+
+        <mat-form-field appearance="outline" style="display: grid">
+          <mat-label>{{"single-product.expiration-date"| translate}}</mat-label>
+          <input matInput id="cc-exp-date" formControlName="expirationDate" type="tel" autocomplete="cc-exp" ccExp>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>{{"single-product.card-cvc"| translate}}</mat-label>
+          <input matInput id="cc-cvc" formControlName="cvc" type="tel" autocomplete="off" maxlength="3" ccCvc>
+        </mat-form-field>
+      </div>
+
+    </form>
+    </mat-card>
+  </mat-step>
+  <mat-step>
+
+    <ng-template matStepLabel>{{"single-product.done"| translate}}</ng-template>
+    <p>{{"single-product.process-successful"| translate}}</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">{{"buttons.reset"| translate}}</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

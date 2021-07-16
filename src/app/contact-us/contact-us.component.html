@@ -1,0 +1,68 @@
+<div class="container">
+
+  <div class="row margin-bottom-30">
+    <div class="col-md-9 mb-margin-bottom-30">
+      <div class="headline"><h2>İletişim Formu</h2></div>
+      <p>Merak ettiğiniz, sormak istediğiniz soruları aşağıdaki form aracılığıyla bize iletebilirsiniz. En kısa sürede
+        yanıt vereceğimizdem emin olabilirsiniz.</p><br>
+      <!--    <form>-->
+      <form  [formGroup]="messageForm"  >
+        <label>Adınız</label>
+        <div class="row margin-bottom-20">
+          <div class="col-md-7 col-md-offset-0">
+            <div class="form-box">
+
+              <label>
+                <input type="text" formControlName="name" class="form-control" [required]="true" >
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <label>Email <span class="color-red">*</span></label>
+        <div class="row margin-bottom-20">
+          <div class="col-md-7 col-md-offset-0">
+            <div class="form-box">
+
+              <input type="text" formControlName="email" class="form-control" required >
+            </div>
+          </div>
+        </div>
+
+        <label>Mesajınız</label>
+        <div class="row margin-bottom-20">
+          <div class="col-md-11 col-md-offset-0">
+            <div class="form-box">
+
+              <textarea rows="8" formControlName="message" class="form-control" [required]=""></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box" style="margin-top:20px;">
+          <button mat-button mat-raised-button color="primary"   class="buy-now-button">Mesajı Gönder
+          </button>
+        </div><!--    </form>-->
+      </form>
+    </div><!--/col-md-9-->
+
+    <div class="col-md-3">
+      <!-- Contacts -->
+      <div class="headline"><h2>İletişim Bilgileri</h2></div>
+      <ul class="list-unstyled who margin-bottom-30">
+        <li><a href="#"><i class="fa fa-home"></i>Çavuşbaşı Cumhuriyet Caddesi, No:391, Beykoz/İstanbul</a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i>info@dtbilisimgrubu.com.tr</a></li>
+        <li><a href="#"><i class="fa fa-phone"></i>+90 (850) 333 38 83</a></li>
+        <li><a href="#"><i class="fa fa-globe"></i>http://www.dtbilisimgrubu.com.tr</a></li>
+      </ul>
+
+      <!-- Business Hours -->
+      <div class="headline"><h2>Çalışma Saatleri</h2></div>
+      <ul class="list-unstyled margin-bottom-30">
+        <li><strong>Pazartesi-Cuma:</strong> 09:00 - 18:00</li>
+        <li><strong>Cumartesi:</strong> 09:00 - 15:00</li>
+        <li><strong>Pazar:</strong> Kapalı</li>
+      </ul>
+    </div><!--/col-md-3-->
+  </div>
+</div>

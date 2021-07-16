@@ -1,0 +1,12 @@
+<owl-carousel
+  [options]="carouselOptions"
+  [items]="images"
+  [carouselClasses]="['owl-theme', 'row', 'sliding']" style="">
+  <div class="item" *ngFor="let image of images;let i = index" style="">
+    <div class="thumbnail-image" style=";">
+      <img [src]="image.images" height="400px" (click)="productHome(image.id)"/>
+<!--      <a style="display: block;width: 100%;text-align: center" (click)="productHome(image.id)" > Click Here To Buy </a>-->
+
+    </div>
+  </div>
+</owl-carousel>
